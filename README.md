@@ -28,6 +28,7 @@ pnpm start
 This will start a local web server at `http://localhost:8000` and automatically open it in your browser.
 
 Alternatively, you can use:
+
 - `pnpm dev` - Same as start (opens browser automatically)
 - `pnpm serve` - Start server without opening browser
 
@@ -39,9 +40,6 @@ Alternatively, you can use:
 ├── splendid-app/
 │   ├── index.html                      # Splendid App page
 │   └── privacy-policy.html             # Privacy Policy page
-├── .github/
-│   └── workflows/
-│       └── deploy.yml                  # GitHub Pages deployment workflow
 └── package.json                        # PNPM configuration
 ```
 
