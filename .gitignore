@@ -15,3 +15,7 @@ Thumbs.db
 # Temporary Files
 tmp/
 temp/
+
+# Node.js / PNPM
+node_modules/
+pnpm-lock.yaml
