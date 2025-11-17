@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splendid App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="/" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">Fairy Wren</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="/" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="/splendid-app" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Splendid App</a>
+                    <a href="/splendid-app/privacy-policy.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Privacy Policy</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button" onclick="toggleMenu()">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-blue-500"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="/" class="block text-sm px-2 py-4 text-gray-500 font-semibold hover:bg-blue-500 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="/splendid-app" class="block text-sm px-2 py-4 text-gray-500 font-semibold hover:bg-blue-500 hover:text-white transition duration-300">Splendid App</a></li>
+                <li><a href="/splendid-app/privacy-policy.html" class="block text-sm px-2 py-4 text-gray-500 font-semibold hover:bg-blue-500 hover:text-white transition duration-300">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Splendid App</h1>
+            <p class="text-xl text-gray-600">Your gateway to excellence</p>
+        </header>
+
+        <section class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Splendid App</h2>
+                <p class="text-gray-600 mb-4">
+                    Splendid App is a cutting-edge mobile application designed to provide you with an exceptional user experience. 
+                    With intuitive features and seamless functionality, we're committed to making your digital life easier.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Features</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>User-friendly interface</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Secure and private</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Regular updates and improvements</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>24/7 customer support</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Privacy & Security</h2>
+                <p class="text-gray-600 mb-4">
+                    We take your privacy seriously. Learn more about how we protect your data and respect your privacy.
+                </p>
+                <a href="/splendid-app/privacy-policy.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                    Read Privacy Policy
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Fairy Wren. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
