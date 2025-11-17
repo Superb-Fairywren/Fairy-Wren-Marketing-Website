@@ -1,6 +1,7 @@
 # Assets Directory
 
 This directory contains static assets for the Fairy Wren website:
+
 - Images
 - CSS files
 - JavaScript files
