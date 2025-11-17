@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Web app presence for FairyWren.dev",
   "scripts": {
-    "start": "http-server ./public -p 8000 -o",
-    "dev": "http-server ./public -p 8000 -o",
-    "serve": "http-server ./public -p 8000"
+    "start": "http-server ./docs -p 8000 -o",
+    "dev": "http-server ./docs -p 8000 -o",
+    "serve": "http-server ./docs -p 8000"
   },
   "keywords": [
     "marketing",
